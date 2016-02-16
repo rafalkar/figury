@@ -9,7 +9,7 @@ int main()
     int wybor; // zmienna obslugujaca [switch]
     int a,b,h; //boki figur + h - wysoksc
     int pole; // pole powierzchni kwadratu i prostokata
-    double pole_t; // pole trojkata i trapezu
+    float pole_t; // pole trojkata i trapezu
     bool exit = false;
 
     cout << "Pola powierzchni figrur plaskich" << endl;
@@ -49,7 +49,7 @@ int main()
                  cin >> a; cout << endl;
                  cout << "Podaj wysokosc h ";
                  cin >> h; cout << endl;
-                 pole_t = a*h*0,5;
+                 pole_t = (a*h)*0.5;
                  cout << "Pole trojkatu = " <<pole_t <<endl;
                  //exit = true;
                 }
@@ -62,12 +62,12 @@ int main()
                  cin >> b; cout << endl;
                  cout << "Podaj wysokosc h ";
                  cin >> h; cout << endl;
-                 pole_t = ((a+b)*h)/2;
+                 pole_t = ((a+b)*h)*0.5;
                  cout << "Pole trapezu = " <<pole_t <<endl;
                  //exit = true;
                 }
         }
-    }       // koniec p«tli while
+    }       // koniec petli while
 
     return 0;
 }
